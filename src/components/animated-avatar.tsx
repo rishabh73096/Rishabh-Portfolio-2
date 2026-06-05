@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 interface AnimatedAvatarProps {
