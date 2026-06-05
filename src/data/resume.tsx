@@ -6,8 +6,8 @@ export const DATA = {
   name: "Rishabh Tiwari",
   initials: "RT",
   url: "https://rishabh-portfolio-fawn.vercel.app",
-  location: "Lucknow, India",
-  locationLink: "https://www.google.com/maps/place/Lucknow",
+  location: "Delhi, India",
+  locationLink: "https://www.google.com/maps/place/Delhi",
   description:
     "Full Stack Developer (MERN) with proven experience building and deploying production-ready web applications using React.js, Next.js, Node.js, Express.js, and MongoDB.",
   summary:
