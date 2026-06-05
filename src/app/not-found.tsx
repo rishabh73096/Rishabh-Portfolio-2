@@ -33,7 +33,7 @@ export default function NotFound() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            Sorry, the page you're looking for doesn't exist. But don't worry, you can always go back to the home page or check out my projects.
+            Sorry, the page you&apos;re looking for doesn&apos;t exist. But don&apos;t worry, you can always go back to the home page or check out my projects.
           </motion.p>
         </div>
 

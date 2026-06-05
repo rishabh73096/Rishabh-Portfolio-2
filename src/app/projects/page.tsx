@@ -105,7 +105,7 @@ export default function ProjectsPage() {
         ) : (
           <div className="text-center py-12 animate-fade-in">
             <p className="text-lg text-muted-foreground">
-              No projects found matching "{searchQuery}"
+              No projects found matching &quot;{searchQuery}&quot;
             </p>
             <button
               onClick={handleClearSearch}
@@ -148,7 +148,7 @@ export default function ProjectsPage() {
         <BlurFade delay={BLUR_FADE_DELAY * 6}>
           <h2 className="text-2xl font-bold">Ready to start your project?</h2>
           <p className="text-muted-foreground max-w-[500px] mx-auto">
-            Let's build something amazing together. Get in touch to discuss your
+            Let&apos;s build something amazing together. Get in touch to discuss your
             ideas.
           </p>
           <a
