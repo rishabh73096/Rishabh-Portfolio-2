@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useMemo } from "react";
-import { motion } from "framer-motion";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -51,12 +50,7 @@ export default function ProjectsPage() {
 
         {/* Search Bar */}
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="relative"
-          >
+          <div className="relative animate-fade-in">
             <div className="relative flex items-center">
               <Search className="absolute left-3 w-5 h-5 text-muted-foreground pointer-events-none" />
               <input
@@ -67,73 +61,49 @@ export default function ProjectsPage() {
                 className="w-full pl-10 pr-10 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               />
               {searchQuery && (
-                <motion.button
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
+                <button
                   onClick={handleClearSearch}
-                  className="absolute right-3 p-1 hover:bg-muted rounded-md transition-colors"
+                  className="absolute right-3 p-1 hover:bg-muted rounded-md transition-colors animate-scale-in"
                   aria-label="Clear search"
                 >
                   <X className="w-5 h-5 text-muted-foreground hover:text-foreground" />
-                </motion.button>
+                </button>
               )}
             </div>
             {searchQuery && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-sm text-muted-foreground mt-2"
-              >
+              <p className="text-sm text-muted-foreground mt-2 animate-fade-in">
                 Found {filteredProjects.length} project
                 {filteredProjects.length !== 1 ? "s" : ""}
-              </motion.p>
+              </p>
             )}
-          </motion.div>
+          </div>
         </BlurFade>
       </section>
 
       {/* Projects Grid */}
       <section id="projects-grid" className="space-y-6">
         {filteredProjects.length > 0 ? (
-          <motion.div
-            layout
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2"
-          >
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {filteredProjects.map((project, id) => (
-              <motion.div
+              <BlurFade
                 key={project.title}
-                layout
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{
-                  duration: 0.3,
-                  delay: id * 0.05,
-                }}
+                delay={BLUR_FADE_DELAY * 4 + id * 0.05}
               >
-                <BlurFade
-                  delay={BLUR_FADE_DELAY * 4 + id * 0.05}
-                >
-                  <ProjectCard
-                    href={project.href}
-                    title={project.title}
-                    description={project.description}
-                    dates={project.dates}
-                    tags={project.technologies}
-                    image={project.image}
-                    video={project.video}
-                    links={project.links}
-                  />
-                </BlurFade>
-              </motion.div>
+                <ProjectCard
+                  href={project.href}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                />
+              </BlurFade>
             ))}
-          </motion.div>
+          </div>
         ) : (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-center py-12"
-          >
+          <div className="text-center py-12 animate-fade-in">
             <p className="text-lg text-muted-foreground">
               No projects found matching "{searchQuery}"
             </p>
@@ -143,7 +113,7 @@ export default function ProjectsPage() {
             >
               Clear search
             </button>
-          </motion.div>
+          </div>
         )}
       </section>
 
@@ -151,39 +121,24 @@ export default function ProjectsPage() {
       <section id="projects-stats" className="pt-12 border-t">
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
           <div className="grid grid-cols-3 gap-4 md:gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="text-center space-y-2"
-            >
+            <div className="text-center space-y-2">
               <div className="text-3xl font-bold text-primary">
                 {DATA.projects.length}+
               </div>
               <p className="text-sm text-muted-foreground">
                 Production Projects
               </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
-              className="text-center space-y-2"
-            >
+            </div>
+            <div className="text-center space-y-2">
               <div className="text-3xl font-bold text-primary">200+</div>
               <p className="text-sm text-muted-foreground">Active Users</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="text-center space-y-2"
-            >
+            </div>
+            <div className="text-center space-y-2">
               <div className="text-3xl font-bold text-primary">100+</div>
               <p className="text-sm text-muted-foreground">
                 Transactions Processed
               </p>
-            </motion.div>
+            </div>
           </div>
         </BlurFade>
       </section>
@@ -196,16 +151,14 @@ export default function ProjectsPage() {
             Let's build something amazing together. Get in touch to discuss your
             ideas.
           </p>
-          <motion.a
+          <a
             href="https://x.com/Rishabh__73"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block px-6 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium"
+            className="inline-block px-6 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium hover:scale-105 duration-200"
           >
             Message Me on Twitter
-          </motion.a>
+          </a>
         </BlurFade>
       </section>
     </main>
