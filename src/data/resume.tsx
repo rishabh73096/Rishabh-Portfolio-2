@@ -1,5 +1,3 @@
-import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
 
@@ -43,8 +41,8 @@ export const DATA = {
   ],
 
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/projects", icon: NotebookIcon, label: "Projects" },
+    { href: "/", label: "Home" },
+    { href: "/projects", label: "Projects" },
   ],
 
   contact: {
@@ -54,22 +52,19 @@ export const DATA = {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/rishabh-tiwari",
-        icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/rishabh-tiwari",
-        icon: Icons.linkedin,
         navbar: true,
       },
       email: {
         name: "Send Email",
         url: "mailto:rishabhtiwari73096@gmail.com",
-        icon: Icons.email,
         navbar: false,
       },
-      X: { name: "X", url: "https://x.com/Rishabh__73", icon: Icons.x, navbar: true, },
+      X: { name: "X", url: "https://x.com/Rishabh__73", navbar: true },
     },
   },
 
