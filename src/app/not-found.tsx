@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export default function NotFound() {
   return (
