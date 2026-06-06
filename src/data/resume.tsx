@@ -105,7 +105,7 @@ export const DATA = {
   projects: [
     {
       title: "Forma Construction",
-      href: "#",
+      href: "https://forma-web-seven.vercel.app/",
       dates: "2024",
       active: true,
       description:
@@ -119,13 +119,18 @@ export const DATA = {
         "JWT",
         "Payment Gateway",
       ],
-      links: [],
-      image: "",
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/TwoDigitInnovations/forma-web",
+        },
+      ],
+      image: "/images/forma.png",
       video: "",
     },
     {
       title: "My Lodge",
-      href: "#",
+      href: "https://www.mylodge.cloud/",
       dates: "2024",
       active: true,
       description:
@@ -139,12 +144,12 @@ export const DATA = {
         "JWT",
       ],
       links: [],
-      image: "",
+      image: "/images/image3.png",
       video: "",
     },
     {
-      title: "Grocery Store",
-      href: "#",
+      title: "Grocery Pickup Store",
+      href: "https://www.bachhoahouston.com/",
       dates: "2024",
       active: true,
       description:
@@ -158,8 +163,154 @@ export const DATA = {
         "Redux Toolkit",
         "Payment Gateway",
       ],
-      links: [],
-      image: "",
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/TwoDigitInnovations/grocerypickup-web",
+        },
+      ],
+      image: "/images/image1.png",
+      video: "",
+    },
+    {
+      title: "Hariir - Job Portal",
+      href: "https://hariir-web.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "A professional social platform connecting job seekers, companies, and recruiters. Features include profile management, job listings, company profiles, and networking capabilities. Built with role-based access control for seamless job discovery and hiring workflows.",
+      technologies: [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT Authentication",
+      ],
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/TwoDigitInnovations/hariir-web",
+        },
+      ],
+      image: "/images/image4.png",
+      video: "",
+    },
+    {
+      title: "Prescripto - Doctor Booking",
+      href: "https://prescripto-doctor-booking-appointment-system.vercel.app",
+      dates: "2024",
+      active: true,
+      description:
+        "A seamless doctor booking system enabling users to browse doctors, view availability, and book appointments in real-time. Features include email notifications, appointment history, and profile management. Built with a context-driven API for efficient scheduling.",
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Stripe API",
+      ],
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/rishabh73096/Prescripto-Doctor-Booking-Appointment-System",
+        },
+      ],
+      image: "/images/docter.png",
+      video: "",
+    },
+    {
+      title: "Threads Of Artisans",
+      href: "https://threads-of-artisans-frontend.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "A MERN stack e-commerce platform connecting artisans to global customers. Features handmade product listings, secure payments, seller dashboards, and customer reviews. Empowers small artisans to reach international markets.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Stripe",
+        "Tailwind CSS",
+        "Redux",
+      ],
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/rishabh73096/threads-of-Artisans-frontend",
+        },
+      ],
+      image: "/images/Threads-of-Artisans.jpg",
+      video: "",
+    },
+    {
+      title: "Tastytails - Food Delivery",
+      href: "https://tasty-trails-eight.vercel.app",
+      dates: "2023",
+      active: true,
+      description:
+        "React-based food delivery app featuring restaurant discovery, menu browsing, shopping cart management, and order placement. Implemented Redux Toolkit for complex state management and Tailwind CSS for responsive UI design.",
+      technologies: [
+        "React.js",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Context API",
+        "Responsive Design",
+      ],
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/rishabh73096/TastyTrail",
+        },
+      ],
+      image: "/images/Tastytails.png",
+      video: "",
+    },
+    {
+      title: "Clipwise - Design Showcase",
+      href: "https://clipwise-task.vercel.app",
+      dates: "2023",
+      active: true,
+      description:
+        "A sleek, responsive homepage UI showcasing modern design principles. Built with React for interactivity and Tailwind CSS for pixel-perfect styling. Demonstrates expertise in component architecture and responsive web design.",
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "Component Design",
+        "Responsive UI",
+      ],
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/rishabh73096/Clipwise-Task",
+        },
+      ],
+      image: "/images/clipwise.png",
+      video: "",
+    },
+    {
+      title: "Portfolio Website",
+      href: "https://rishabh-portfolio-fawn.vercel.app",
+      dates: "2023",
+      active: true,
+      description:
+        "Personal portfolio showcasing frontend development skills and project work. Features smooth animations, responsive design, and modern UI patterns. Demonstrates proficiency with React, Next.js, and Tailwind CSS.",
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "Responsive Design",
+        "Web Animation",
+      ],
+      links: [
+        {
+          icon: "github",
+          href: "https://github.com/rishabh73096/Rishabh-Portfolio",
+        },
+      ],
+      image: "/images/portfolio.jpg",
       video: "",
     },
   ],
