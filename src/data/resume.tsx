@@ -158,12 +158,7 @@ export const DATA = {
         "Redux Toolkit",
         "Payment Gateway",
       ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/TwoDigitInnovations/grocerypickup-web",
-        },
-      ],
+      links: [],
       image: "/images/image1.png",
       video: "",
     },
@@ -183,12 +178,7 @@ export const DATA = {
         "MongoDB",
         "JWT Authentication",
       ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/TwoDigitInnovations/hariir-web",
-        },
-      ],
+      links: [],
       image: "/images/image4.png",
       video: "",
     },
@@ -207,12 +197,7 @@ export const DATA = {
         "MongoDB",
         "Stripe API",
       ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/rishabh73096/Prescripto-Doctor-Booking-Appointment-System",
-        },
-      ],
+      links: [],
       image: "/images/docter.png",
       video: "",
     },
@@ -232,12 +217,7 @@ export const DATA = {
         "Tailwind CSS",
         "Redux",
       ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/rishabh73096/threads-of-Artisans-frontend",
-        },
-      ],
+      links: [],
       image: "/images/Threads-of-Artisans.jpg",
       video: "",
     },
@@ -255,12 +235,7 @@ export const DATA = {
         "Context API",
         "Responsive Design",
       ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/rishabh73096/TastyTrail",
-        },
-      ],
+      links: [],
       image: "/images/Tastytails.png",
       video: "",
     },
@@ -277,37 +252,11 @@ export const DATA = {
         "Component Design",
         "Responsive UI",
       ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/rishabh73096/Clipwise-Task",
-        },
-      ],
+      links: [],
       image: "/images/clipwise.png",
       video: "",
     },
-    {
-      title: "Portfolio Website",
-      href: "https://rishabh-portfolio-fawn.vercel.app",
-      dates: "2023",
-      active: true,
-      description:
-        "Personal portfolio showcasing frontend development skills and project work. Features smooth animations, responsive design, and modern UI patterns. Demonstrates proficiency with React, Next.js, and Tailwind CSS.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Responsive Design",
-        "Web Animation",
-      ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/rishabh73096/Rishabh-Portfolio",
-        },
-      ],
-      image: "/images/portfolio.jpg",
-      video: "",
-    },
+
   ],
 
 
