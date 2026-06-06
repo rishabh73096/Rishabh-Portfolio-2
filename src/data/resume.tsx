@@ -119,12 +119,7 @@ export const DATA = {
         "JWT",
         "Payment Gateway",
       ],
-      links: [
-        {
-          icon: "github",
-          href: "https://github.com/TwoDigitInnovations/forma-web",
-        },
-      ],
+      links: [],
       image: "/images/forma.png",
       video: "",
     },
