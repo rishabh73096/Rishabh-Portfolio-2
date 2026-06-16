@@ -32,6 +32,16 @@ export default function ProjectsPage() {
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-8">
+      {/* Back Button */}
+      <BlurFade delay={BLUR_FADE_DELAY}>
+        <Link
+          href="/"
+          className="text-primary hover:underline text-sm font-medium w-fit"
+        >
+          ← Back to Home
+        </Link>
+      </BlurFade>
+
       {/* Hero Section */}
       <section id="projects-hero" className="space-y-6">
         <div className="space-y-4">
