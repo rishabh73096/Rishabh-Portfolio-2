@@ -24,8 +24,8 @@ export function AnimatedAvatar({
 }: AnimatedAvatarProps) {
   return (
     <motion.div
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
+      initial={{ scale: 0, opacity: 0, y: 20 }}
+      animate={{ scale: 1, opacity: 1, y: 0 }}
       transition={{
         type: "spring",
         stiffness: 260,
@@ -33,13 +33,14 @@ export function AnimatedAvatar({
         delay: 0.1,
       }}
       whileHover={{
-        scale: 1.1,
-        rotate: 5,
+        scale: 1.08,
+        rotate: 2,
       }}
       whileTap={{ scale: 0.95 }}
-      className="cursor-pointer"
+      className="cursor-pointer relative"
     >
-      <Avatar className={`${sizeClasses[size]} border-2 border-primary shadow-lg`}>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-2xl -z-10" />
+      <Avatar className={`${sizeClasses[size]} border-3 border-primary shadow-2xl ring-2 ring-background`}>
         <AvatarImage alt={alt} src={src} />
         <AvatarFallback>{fallback}</AvatarFallback>
       </Avatar>
