@@ -201,7 +201,7 @@ export default function ProjectDetailPage({
         />
         <BlurFade delay={BLUR_FADE_DELAY * 14}>
           <div className="flex gap-3 flex-wrap">
-            {project.href && project.href !== "#" && (
+            {project.href && (
               <a
                 href={project.href}
                 target="_blank"
