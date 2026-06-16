@@ -6,6 +6,7 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { DATA } from "@/data/resume";
 import { Search, X } from "lucide-react";
+import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -53,7 +54,7 @@ export default function ProjectsPage() {
           />
           <BlurFadeText
             delay={BLUR_FADE_DELAY * 2}
-            className="max-w-[600px] text-lg text-muted-foreground"
+            className="max-w-2xl text-lg text-muted-foreground"
             text="Explore my latest work in full-stack development, featuring production-ready applications with real-world clients and users."
           />
         </div>
@@ -157,7 +158,7 @@ export default function ProjectsPage() {
       <section id="projects-cta" className="pt-12 text-center space-y-4">
         <BlurFade delay={BLUR_FADE_DELAY * 6}>
           <h2 className="text-2xl font-bold">Ready to start your project?</h2>
-          <p className="text-muted-foreground max-w-[500px] mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Let&apos;s build something amazing together. Get in touch to discuss your
             ideas.
           </p>
