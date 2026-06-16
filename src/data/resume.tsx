@@ -15,6 +15,7 @@ export const DATA = {
 
   skills: [
     "React.js 18",
+    "TypeScript",
     "Next.js (SSR/SSG)",
     "JavaScript (ES6+)",
     "Redux Toolkit",
@@ -60,9 +61,9 @@ export const DATA = {
         navbar: true,
       },
       email: {
-        name: "Send Email",
+        name: "Email",
         url: "mailto:rishabhtiwari73096@gmail.com",
-        navbar: false,
+        navbar: true,
       },
       X: { name: "X", url: "https://x.com/Rishabh__73", navbar: true },
     },
@@ -70,16 +71,16 @@ export const DATA = {
 
   work: [
     {
-      company: "2Digit Innovations Pvt. Ltd.",
+      company: "2DigitInnovations Pvt. Ltd.",
       href: "#",
       badges: ["Full Stack"],
-      location: "India",
+      location: "Remote, India",
       title: "Full Stack Developer (MERN)",
       logoUrl: "/2digit.png",
       start: "Sep 2024",
       end: "Present",
       description:
-        "Built and deployed full-stack web platforms (Next.js + Node.js + MongoDB) end-to-end — from Figma design to production on cloud hosting, serving real clients. Delivered Forma Construction platform: 200+ active users, 50+ projects managed, 100+ payment transactions processed via integrated payment gateway. Implemented JWT authentication + role-based access control (User / Organization / Admin) across 3 live platforms, ensuring secure multi-role access. Optimized API response performance by adding MongoDB indexing and query optimization; reduced load time on key pages significantly. Shipped production features in agile sprints using Git + GitHub; collaborated with design and backend teams across full product lifecycle.",
+        "Built and deployed 3+ client-facing MERN stack applications from scratch, reducing average page load time by ~40% through lazy loading and code splitting. Delivered Forma Construction platform: 200+ active users, 50+ projects managed, 100+ payment transactions processed via integrated payment gateway. Implemented JWT authentication + role-based access control (User / Organization / Admin) across multiple live platforms, ensuring secure multi-role access. Optimized API response performance by implementing MongoDB indexing and query optimization. Shipped production features in agile sprints using Git + GitHub; collaborated with cross-functional teams across full product lifecycle.",
     },
   ],
 
@@ -180,80 +181,6 @@ export const DATA = {
       ],
       links: [],
       image: "/images/image4.png",
-      video: "",
-    },
-    {
-      title: "Prescripto - Doctor Booking",
-      href: "https://prescripto-doctor-booking-appointment-system.vercel.app",
-      dates: "2024",
-      active: true,
-      description:
-        "A seamless doctor booking system enabling users to browse doctors, view availability, and book appointments in real-time. Features include email notifications, appointment history, and profile management. Built with a context-driven API for efficient scheduling.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Stripe API",
-      ],
-      links: [],
-      image: "/images/docter.png",
-      video: "",
-    },
-    {
-      title: "Threads Of Artisans",
-      href: "https://threads-of-artisans-frontend.vercel.app/",
-      dates: "2024",
-      active: true,
-      description:
-        "A MERN stack e-commerce platform connecting artisans to global customers. Features handmade product listings, secure payments, seller dashboards, and customer reviews. Empowers small artisans to reach international markets.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Stripe",
-        "Tailwind CSS",
-        "Redux",
-      ],
-      links: [],
-      image: "/images/Threads-of-Artisans.jpg",
-      video: "",
-    },
-    {
-      title: "Tastytails - Food Delivery",
-      href: "https://tasty-trails-eight.vercel.app",
-      dates: "2023",
-      active: true,
-      description:
-        "React-based food delivery app featuring restaurant discovery, menu browsing, shopping cart management, and order placement. Implemented Redux Toolkit for complex state management and Tailwind CSS for responsive UI design.",
-      technologies: [
-        "React.js",
-        "Redux Toolkit",
-        "Tailwind CSS",
-        "Context API",
-        "Responsive Design",
-      ],
-      links: [],
-      image: "/images/Tastytails.png",
-      video: "",
-    },
-    {
-      title: "Clipwise - Design Showcase",
-      href: "https://clipwise-task.vercel.app",
-      dates: "2023",
-      active: true,
-      description:
-        "A sleek, responsive homepage UI showcasing modern design principles. Built with React for interactivity and Tailwind CSS for pixel-perfect styling. Demonstrates expertise in component architecture and responsive web design.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Component Design",
-        "Responsive UI",
-      ],
-      links: [],
-      image: "/images/clipwise.png",
       video: "",
     },
 
