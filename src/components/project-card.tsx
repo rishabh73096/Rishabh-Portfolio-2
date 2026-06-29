@@ -15,6 +15,7 @@ interface Props {
   title: string;
   href?: string;
   description: string;
+  shortDescription?: string;
   dates: string;
   tags: readonly string[];
   link?: string;
@@ -32,6 +33,7 @@ export function ProjectCard({
   title,
   href,
   description,
+  shortDescription,
   dates,
   tags,
   link,
@@ -78,7 +80,7 @@ export function ProjectCard({
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
           <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            {description}
+            {shortDescription || description}
           </Markdown>
         </div>
       </CardHeader>

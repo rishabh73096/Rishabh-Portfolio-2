@@ -110,6 +110,8 @@ export const DATA = {
       href: "https://app.clee.co/",
       dates: "2024",
       active: true,
+      shortDescription:
+        "3-app SaaS platform serving beauty & wellness businesses with booking, payments, loyalty rewards, and 15+ business modules processing 100+ transactions.",
       description:
         "Architected a comprehensive SaaS platform from scratch serving beauty & wellness businesses with 3 interconnected apps: admin dashboard, customer marketplace, and REST API server. Implemented robust JWT authentication and role-based access control (admin/manager/staff/customer) with shared Mongoose data models. Owned end-to-end booking & payment flow — designed MongoDB schemas, built Express controllers for slot management, checkout, and confirmation with real-time Stripe integration and Redux-powered state synchronization. Built dynamic loyalty rewards engine with React formula builder UI (fixed/percentage toggle, live preview) and async backend service auto-crediting customer balances post-payment. Delivered transactional email infrastructure via Postmark with reusable HTML templates and automated marketing integration. Shipped 15+ business modules: SMS/email campaigns, inventory management, staff time-clock (timesheets/leave/roster), gift vouchers, promo codes, advertiser analytics, and dynamic financial reports — reliably processing 100+ plan purchases and transactions.",
       technologies: [
@@ -124,7 +126,7 @@ export const DATA = {
         "JWT",
       ],
       links: [],
-      image: "/images/clee.png",
+      image: "/images/Clee.png",
       video: "",
     },
     {
@@ -132,6 +134,7 @@ export const DATA = {
       href: "https://www.bachhoahouston.com/",
       dates: "2024",
       active: true,
+      shortDescription: undefined,
       description:
         "Built a full-featured e-commerce platform with cart, wishlist, and checkout flow — serving as a live grocery pickup store. Integrated secure payment gateway and implemented role-based access (admin / customer). Used Redux Toolkit for global state management; ensured consistent UI across all user flows. Built admin dashboard to manage products, orders, and users; deployed on Vercel with live URL.",
       technologies: [
@@ -152,6 +155,7 @@ export const DATA = {
       href: "https://forma-web-seven.vercel.app/",
       dates: "2024",
       active: true,
+      shortDescription: undefined,
       description:
         "Built and deployed a live construction consultation platform serving 10+ clients and 200+ users, managing both frontend and backend. Executed role-based access (User & Organization) with secure authentication and team collaboration features. Enhanced an end-to-end project management system handling 50+ construction projects with controlled document access. Integrated secure payments, REST APIs, and MongoDB, reliably processing 100+ plan purchases and transactions.",
       technologies: [
@@ -172,6 +176,7 @@ export const DATA = {
       href: "https://www.mylodge.cloud/",
       dates: "2024",
       active: true,
+      shortDescription: undefined,
       description:
         "Built a full-featured rental platform with 50+ property listings, real-time availability tracking, and JWT-secured booking flow. Implemented separate dashboards for guests and hosts with role-based access control. Built REST APIs for bookings, listings, and user management; designed mobile-optimized responsive UI. Deployed live at mylodge.cloud — handling real user traffic.",
       technologies: [
@@ -191,6 +196,7 @@ export const DATA = {
       href: "https://hariir-web.vercel.app/",
       dates: "2024",
       active: true,
+      shortDescription: undefined,
       description:
         "A professional social platform connecting job seekers, companies, and recruiters. Features include profile management, job listings, company profiles, and networking capabilities. Built with role-based access control for seamless job discovery and hiring workflows.",
       technologies: [

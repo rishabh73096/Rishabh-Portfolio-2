@@ -104,6 +104,7 @@ export default function ProjectsPage() {
                   href={project.href}
                   title={project.title}
                   description={project.description}
+                  shortDescription={project.shortDescription}
                   dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
