@@ -31,7 +31,7 @@ export default function Page() {
               <BlurFade delay={BLUR_FADE_DELAY * 2}>
                 <div className="flex gap-3 pt-4">
                   <a
-                    href="https://drive.google.com/file/d/1rEqScAqQfc-BFH5RAQg81AeCbKSrVoFB/view?usp=sharing"
+                    href={DATA.resumeLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium text-sm"

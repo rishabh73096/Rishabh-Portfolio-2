@@ -12,6 +12,7 @@ export const DATA = {
     "Full Stack Developer (MERN) with proven experience building and deploying production-ready web applications using React.js, Next.js, Node.js, Express.js, and MongoDB. Strong expertise in RESTful API development, JWT authentication, role-based access control, and responsive UI with Tailwind CSS. Delivered live platforms serving real clients — including a construction management system (200+ users, 50+ projects) and an e-commerce platform (100+ transactions). Experienced in agile teams, clean architecture, and end-to-end product delivery.",
 
   avatarUrl: "/me.jpeg",
+  resumeLink: "https://drive.google.com/file/d/1FAoUklRT1ESkVprO1Ux6IlQnUJnLRlyv/view?usp=sharing",
 
   skills: [
     "React.js 18",
@@ -105,6 +106,48 @@ export const DATA = {
 
   projects: [
     {
+      title: "Clee — Full-Stack SaaS Platform for Beauty & Wellness Businesses",
+      href: "https://app.clee.co/",
+      dates: "2024",
+      active: true,
+      description:
+        "Architected a comprehensive SaaS platform from scratch serving beauty & wellness businesses with 3 interconnected apps: admin dashboard, customer marketplace, and REST API server. Implemented robust JWT authentication and role-based access control (admin/manager/staff/customer) with shared Mongoose data models. Owned end-to-end booking & payment flow — designed MongoDB schemas, built Express controllers for slot management, checkout, and confirmation with real-time Stripe integration and Redux-powered state synchronization. Built dynamic loyalty rewards engine with React formula builder UI (fixed/percentage toggle, live preview) and async backend service auto-crediting customer balances post-payment. Delivered transactional email infrastructure via Postmark with reusable HTML templates and automated marketing integration. Shipped 15+ business modules: SMS/email campaigns, inventory management, staff time-clock (timesheets/leave/roster), gift vouchers, promo codes, advertiser analytics, and dynamic financial reports — reliably processing 100+ plan purchases and transactions.",
+      technologies: [
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Stripe",
+        "Postmark",
+        "JWT",
+      ],
+      links: [],
+      image: "/images/clee.png",
+      video: "",
+    },
+    {
+      title: "Grocery Pickup Store",
+      href: "https://www.bachhoahouston.com/",
+      dates: "2024",
+      active: true,
+      description:
+        "Built a full-featured e-commerce platform with cart, wishlist, and checkout flow — serving as a live grocery pickup store. Integrated secure payment gateway and implemented role-based access (admin / customer). Used Redux Toolkit for global state management; ensured consistent UI across all user flows. Built admin dashboard to manage products, orders, and users; deployed on Vercel with live URL.",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Redux Toolkit",
+        "Payment Gateway",
+      ],
+      links: [],
+      image: "/images/image1.png",
+      video: "",
+    },
+    {
       title: "Forma Construction",
       href: "https://forma-web-seven.vercel.app/",
       dates: "2024",
@@ -141,26 +184,6 @@ export const DATA = {
       ],
       links: [],
       image: "/images/image3.png",
-      video: "",
-    },
-    {
-      title: "Grocery Pickup Store",
-      href: "https://www.bachhoahouston.com/",
-      dates: "2024",
-      active: true,
-      description:
-        "Built a full-featured e-commerce platform with cart, wishlist, and checkout flow — serving as a live grocery pickup store. Integrated secure payment gateway and implemented role-based access (admin / customer). Used Redux Toolkit for global state management; ensured consistent UI across all user flows. Built admin dashboard to manage products, orders, and users; deployed on Vercel with live URL.",
-      technologies: [
-        "Next.js",
-        "Tailwind CSS",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Redux Toolkit",
-        "Payment Gateway",
-      ],
-      links: [],
-      image: "/images/image1.png",
       video: "",
     },
     {
