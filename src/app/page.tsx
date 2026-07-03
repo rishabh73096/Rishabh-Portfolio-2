@@ -15,21 +15,21 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-3xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
+          <div className="gap-4 flex flex-col md:flex-row md:justify-between md:items-start items-center">
+            <div className="flex-col flex flex-1 space-y-1.5 md:order-1 order-2">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-center md:text-left"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-xl text-center md:text-left"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
               <BlurFade delay={BLUR_FADE_DELAY * 2}>
-                <div className="flex gap-3 pt-4">
+                <div className="flex gap-3 pt-4 justify-center md:justify-start flex-wrap">
                   <a
                     href={DATA.resumeLink}
                     target="_blank"
@@ -47,7 +47,7 @@ export default function Page() {
                 </div>
               </BlurFade>
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
+            <BlurFade delay={BLUR_FADE_DELAY} className="md:order-2 order-1">
               <AnimatedAvatar
                 src={DATA.avatarUrl}
                 alt={DATA.name}
