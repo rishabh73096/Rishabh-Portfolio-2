@@ -16,7 +16,7 @@ export default function ProjectDetailPage({
   params: { slug: string };
 }) {
   const project = DATA.projects.find(
-    (p) => p.title.toLowerCase().replace(/\s+/g, "-") === params.slug
+    (p) => p.title.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-") === params.slug
   );
 
   if (!project) {

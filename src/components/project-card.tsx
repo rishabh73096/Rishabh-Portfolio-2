@@ -49,7 +49,7 @@ export function ProjectCard({
       }
     >
       <Link
-        href={`/projects/${href ? title.toLowerCase().replace(/\s+/g, "-") : "#"}`}
+        href={`/projects/${href ? title.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-") : "#"}`}
         className={cn("block cursor-pointer", className)}
       >
         {video && (
