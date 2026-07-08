@@ -236,7 +236,7 @@ export const DATA = {
         "JWT Authentication",
       ],
       links: [],
-      image: "/images/image5.png",
+      image: "/images/doulebay.png",
       video: "",
     },
     {
@@ -258,7 +258,7 @@ export const DATA = {
         "JWT",
       ],
       links: [],
-      image: "/images/image6.png",
+      image: "/images/CHMP.png",
       video: "",
     },
     {
@@ -277,7 +277,7 @@ export const DATA = {
         "Responsive Design",
       ],
       links: [],
-      image: "/images/image7.png",
+      image: "/images/busbooking.png",
       video: "",
     },
     {
@@ -296,7 +296,7 @@ export const DATA = {
         "Responsive Design",
       ],
       links: [],
-      image: "/images/image8.png",
+      image: "/images/boakkorning.png",
       video: "",
     },
 
