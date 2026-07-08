@@ -216,6 +216,89 @@ export const DATA = {
       image: "/images/image4.png",
       video: "",
     },
+    {
+      title: "Double Bay Website",
+      href: "https://double-bay-website.vercel.app/",
+      dates: "2024",
+      active: true,
+      shortDescription:
+        "E-commerce platform for beauty products and salon services with integrated Stripe payments. Implemented JWT authentication, role-based access control, and real-time service booking system for seamless customer experience.",
+      description:
+        "Built comprehensive e-commerce platform for beauty products and professional salon services. Integrated Stripe payment gateway for secure transactions and implemented JWT-based authentication with role-based access control. Features include service booking, product catalog, customer reviews, and admin dashboard for service and inventory management.",
+      technologies: [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Stripe",
+        "JWT Authentication",
+      ],
+      links: [],
+      image: "/images/image5.png",
+      video: "",
+    },
+    {
+      title: "Canada Halal Website",
+      href: "https://caneda-halal-register.vercel.app/",
+      dates: "2024",
+      active: true,
+      shortDescription:
+        "Specialized halal product registration and management platform for Canadian market. Built with secure user authentication and role-based access for vendors, certifiers, and consumers.",
+      description:
+        "Developed dedicated platform for halal product registration and certification in the Canadian market. Features vendor management, product verification workflows, certification tracking, and consumer lookup system. Implemented secure authentication, document management, and audit trails for compliance and transparency.",
+      technologies: [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+      ],
+      links: [],
+      image: "/images/image6.png",
+      video: "",
+    },
+    {
+      title: "Alagare - Bus Booking Landing Page",
+      href: "https://alagare-landingpage.vercel.app/",
+      dates: "2024",
+      active: true,
+      shortDescription:
+        "Professional landing page for bus booking service with integrated reservation system. Features responsive design, service showcase, and direct booking integration.",
+      description:
+        "Created high-converting landing page for Alagare bus booking service. Showcases available routes, pricing, and booking features with responsive design optimized for mobile users. Integrated booking system and customer testimonials to drive conversions.",
+      technologies: [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Responsive Design",
+      ],
+      links: [],
+      image: "/images/image7.png",
+      video: "",
+    },
+    {
+      title: "Bok A Korning - Booking Platform Landing",
+      href: "https://www.bokakorning.online/",
+      dates: "2024",
+      active: true,
+      shortDescription:
+        "Professional booking platform landing page with service discovery and instant reservation capabilities. Optimized for user engagement and conversion with modern design.",
+      description:
+        "Built responsive landing page for Bok A Korning booking platform. Features service categorization, real-time availability display, seamless booking flow, and customer testimonials. Optimized for performance and mobile experience to maximize conversion rates.",
+      technologies: [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Responsive Design",
+      ],
+      links: [],
+      image: "/images/image8.png",
+      video: "",
+    },
 
   ],
 

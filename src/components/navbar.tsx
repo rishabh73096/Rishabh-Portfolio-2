@@ -8,6 +8,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
+import { Icons } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { HomeIcon, NotebookIcon } from "lucide-react";
@@ -20,6 +21,21 @@ const getNavIcon = (label: string) => {
       return NotebookIcon;
     default:
       return HomeIcon;
+  }
+};
+
+const getSocialIcon = (name: string) => {
+  switch (name) {
+    case "GitHub":
+      return Icons.github;
+    case "LinkedIn":
+      return Icons.linkedin;
+    case "email":
+      return Icons.email;
+    case "X":
+      return Icons.x;
+    default:
+      return Icons.github;
   }
 };
 
@@ -51,6 +67,32 @@ export default function Navbar() {
             </DockIcon>
           );
         })}
+        <Separator orientation="vertical" className="h-full" />
+        {Object.entries(DATA.contact.social)
+          .filter(([_, social]) => social.navbar)
+          .map(([name, social]) => {
+            const Icon = getSocialIcon(name);
+            return (
+              <DockIcon key={name}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link
+                      href={social.url}
+                      className={cn(
+                        buttonVariants({ variant: "ghost", size: "icon" }),
+                        "size-12"
+                      )}
+                    >
+                      <Icon className="size-4" />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{name}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </DockIcon>
+            );
+          })}
         <Separator orientation="vertical" className="h-full py-2" />
         <DockIcon>
           <Tooltip>
