@@ -12,7 +12,7 @@ export const DATA = {
     "Full Stack Developer (MERN) with proven experience building and deploying production-ready web applications using React.js, Next.js, Node.js, Express.js, and MongoDB. Strong expertise in RESTful API development, JWT authentication, role-based access control, and responsive UI with Tailwind CSS. Delivered live platforms serving real clients — including a construction management system (200+ users, 50+ projects) and an e-commerce platform (100+ transactions). Experienced in agile teams, clean architecture, and end-to-end product delivery.",
 
   avatarUrl: "/me.jpeg",
-  resumeLink: "https://drive.google.com/file/d/1FAoUklRT1ESkVprO1Ux6IlQnUJnLRlyv/view?usp=sharing",
+  resumeLink: "https://drive.google.com/file/d/1_nW_lbeJyTv2L3Tnby6I34EwYqX0cL_w/view?usp=sharing",
 
   skills: [
     "React.js 18",
